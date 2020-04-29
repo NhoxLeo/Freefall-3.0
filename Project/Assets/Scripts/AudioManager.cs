@@ -43,6 +43,7 @@ public class AudioManager : MonoBehaviour
             s.source.loop = s.loop;
             s.source.mute = s.mute;
             
+            
 
             s.source.outputAudioMixerGroup = soundFXMixer;
         }
@@ -108,11 +109,11 @@ public class AudioManager : MonoBehaviour
         }
         m.source.Stop();
     }
-
+    /*
     public void ClickButton()
     {
-        Debug.Log(this);
         PlayAudio("Button Click");
         PlayAudio("Play Button");
     }
+    */
 }
