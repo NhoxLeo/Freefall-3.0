@@ -24,6 +24,8 @@ public class MenuController : MonoBehaviour
 
 
 
+    public bool controlsInverted = false;
+
     private void Start()
     {
         Time.timeScale = 1f;
@@ -54,6 +56,16 @@ public class MenuController : MonoBehaviour
                 }
             }
         }
+
+        if (controlsInverted == true)
+        {
+            FindObjectOfType<InputManager>().playerControlsInverted = true;
+        }
+        else if (controlsInverted == false)
+        {
+            FindObjectOfType<InputManager>().playerControlsInverted = false;
+        }
+
     }
 
     public void Resume()
