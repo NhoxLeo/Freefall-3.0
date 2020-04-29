@@ -51,6 +51,7 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     mute: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - name: Boost
     clip: {fileID: 8300000, guid: c98b15f348aa7431eb9619b056e6b9a0, type: 3}
@@ -58,6 +59,7 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     mute: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - name: Pop
     clip: {fileID: 8300000, guid: 8a07e0c43835a4e72ad209b0ffd689c9, type: 3}
@@ -65,6 +67,7 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     mute: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - name: OutOfFuel
     clip: {fileID: 8300000, guid: 21b8e5bfb4093418f94af1b758ba581e, type: 3}
@@ -72,6 +75,7 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     mute: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - name: Dead
     clip: {fileID: 8300000, guid: 6b801d93d058cd84b979e922bd8298d6, type: 3}
@@ -79,6 +83,7 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     mute: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - name: FlyingFast
     clip: {fileID: 8300000, guid: 0a1bd725b02314e0b9e60859789332ea, type: 3}
@@ -86,6 +91,7 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     mute: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - name: WingsIn
     clip: {fileID: 8300000, guid: eabfc6cd6c5674f219d6dcc6e864a348, type: 3}
@@ -93,6 +99,7 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     mute: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - name: WingsOut
     clip: {fileID: 8300000, guid: 1a120b43565b24f3ea13cdce19ac7067, type: 3}
@@ -100,6 +107,7 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     mute: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - name: Button Highlight
     clip: {fileID: 8300000, guid: 56a981d7a518dc5469434673039cb606, type: 3}
@@ -107,6 +115,7 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     mute: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - name: Play Button
     clip: {fileID: 8300000, guid: da1d648414e7490498c9c26524211f2f, type: 3}
@@ -114,6 +123,7 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     mute: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - name: Button Click
     clip: {fileID: 8300000, guid: 251f11c737a8b17478bd3ff2c372aac2, type: 3}
@@ -121,6 +131,7 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     mute: 0
+    playOnAwake: 0
     source: {fileID: 0}
   songs:
   - name: Theme
@@ -128,7 +139,7 @@ MonoBehaviour:
     volumn: 0.12
     pitch: 1
     loop: 1
-    mute: 0
+    mute: 1
     source: {fileID: 0}
   musicMixer: {fileID: -840189874346821228, guid: 93688eb1f1e187444a8da7094b4929c6,
     type: 2}

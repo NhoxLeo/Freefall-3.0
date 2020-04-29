@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GliderController : MonoBehaviour
 {
+
     public Transform StartPosition;
     [SerializeField]
     private GameObject windStream;
@@ -59,7 +60,7 @@ public class GliderController : MonoBehaviour
     [SerializeField]
     private float slowFallMultiplier;
 
-   // public LightScript lightScript;
+    // public LightScript lightScript;
 
     //Start
     private void Start()
