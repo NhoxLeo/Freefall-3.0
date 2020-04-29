@@ -193,6 +193,9 @@ public class FlyingStates : MonoBehaviour
     public ParticleSystem leftHexPS;
     public ParticleSystem divingParticle;
 
+    public ParticleSystem rightHexOutPS;
+    public ParticleSystem leftHexOutPS;
+
     [SerializeField]
     private Text speedUI;
     [SerializeField]
@@ -372,8 +375,6 @@ public class FlyingStates : MonoBehaviour
         else if (yAngle <= riseThreshold)
         {
             canBecomeUnstable = false;
-
-
             if (yAngle <= (riseThreshold + -unstableDiveMultpler))
             {
                 if (isBoosting == true)
@@ -393,15 +394,11 @@ public class FlyingStates : MonoBehaviour
                     isStablized = false;
                     canTurnUp = false;
                 }
-
             }
             else if (canBecomeUnstable == false)
             {
                 stablizeCounter = 0;
             }
-
-
-
             isRising = true;
             if (isRising)
             {
@@ -448,7 +445,6 @@ public class FlyingStates : MonoBehaviour
         {
             windResistanceDivider = 2;
         }
-
     }
 
     //Rising-----------------------------------
@@ -539,6 +535,7 @@ public class FlyingStates : MonoBehaviour
 
         WingStreamsOn();
         WingsFadeIn = false;
+
         burstEm = true;
 
         wingsOut = true;
