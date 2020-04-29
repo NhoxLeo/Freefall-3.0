@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using JetBrains.Annotations;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
@@ -60,6 +61,9 @@ public class GliderController : MonoBehaviour
     [SerializeField]
     private float slowFallMultiplier;
 
+    public GameObject fogcard;
+    public float distanceBetweenFog;
+
     // public LightScript lightScript;
 
     //Start
@@ -89,6 +93,7 @@ public class GliderController : MonoBehaviour
 
 
         EndGameUI.SetActive(false);
+        
 
     }
 
@@ -189,8 +194,17 @@ public class GliderController : MonoBehaviour
         flyingStates.rot.x += flyingStates.drop;
         flyingStates.rb.velocity += -Vector3.up * slowFallMultiplier;
 
+        //Raycast test
 
+        /*
+        RaycastHit hit;
 
+        Ray fogTest = new Ray(transform.position, fogcard.transform.position);
+        if (Physics.Raycast(fogTest, out hit))
+        {
+            distanceBetweenFog = hit.distance;
+        }
+        */
     }
 
     private void OnTriggerStay(Collider other)
