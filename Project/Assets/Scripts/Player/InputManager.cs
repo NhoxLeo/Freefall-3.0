@@ -52,6 +52,8 @@ public class InputManager : MonoBehaviour
     [SerializeField]
     private float yRotationSpeed;
 
+    public bool playerControlsInverted = false;
+
 
     // Start is called before the first frame update
     void Start()
@@ -74,16 +76,32 @@ public class InputManager : MonoBehaviour
     }
     public void InputData()
     {
-        yaw = yRotationSpeed * Input.GetAxis("Horizontal") * rotationController.currentYawRotationSpeed * Time.deltaTime;
+        if(playerControlsInverted == false)
+        {
+            yaw = yRotationSpeed * Input.GetAxis("Horizontal") * rotationController.currentYawRotationSpeed * Time.deltaTime;
+            if (flyingStates.canTurnUp == true)
+            {
+                pitch = xRotationSpeed * Input.GetAxis("Vertical") * rotationController.currentPitchRotationSpeed * Time.deltaTime;
+            }
+            else if (flyingStates.canTurnUp == false)
+            {
+                pitch = Mathf.Clamp(pitch, 0, 1);
+            }
+        }
+        else
+        {
+            yaw = yRotationSpeed * Input.GetAxis("Horizontal") * rotationController.currentYawRotationSpeed * Time.deltaTime;
 
-        if (flyingStates.canTurnUp == true)
-        {
-            pitch = xRotationSpeed * Input.GetAxis("Vertical") * rotationController.currentPitchRotationSpeed * Time.deltaTime;
+            if (flyingStates.canTurnUp == true)
+            {
+                pitch = xRotationSpeed * -Input.GetAxis("Vertical") * rotationController.currentPitchRotationSpeed * Time.deltaTime;
+            }
+            else if (flyingStates.canTurnUp == false)
+            {
+                pitch = Mathf.Clamp(pitch, 0, 1);
+            }
         }
-        else if (flyingStates.canTurnUp == false)
-        {
-            pitch = Mathf.Clamp(pitch, 0, 1);
-        }
+
         
 
 

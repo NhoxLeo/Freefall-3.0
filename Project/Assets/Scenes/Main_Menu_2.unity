@@ -16672,6 +16672,11 @@ PrefabInstance:
       propertyPath: sounds.Array.data[10].clip
       value: 
       objectReference: {fileID: 8300000, guid: 251f11c737a8b17478bd3ff2c372aac2, type: 3}
+    - target: {fileID: 5987221263753901709, guid: 3d4d12fa85b40094bbcb37b76a7fbd01,
+        type: 3}
+      propertyPath: sounds.Array.data[10].playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d4d12fa85b40094bbcb37b76a7fbd01, type: 3}
 --- !u!1 &1598580727 stripped
