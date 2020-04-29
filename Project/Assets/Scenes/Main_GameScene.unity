@@ -2549,7 +2549,7 @@ PrefabInstance:
     - target: {fileID: 5092758867627984872, guid: 44281333b3ab5244a8e04103fc59cdad,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 919.9675
+      value: 1092
       objectReference: {fileID: 0}
     - target: {fileID: 5092758867627984872, guid: 44281333b3ab5244a8e04103fc59cdad,
         type: 3}
@@ -2596,6 +2596,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5092758867627984872, guid: 44281333b3ab5244a8e04103fc59cdad,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 515004.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 5092758867627984872, guid: 44281333b3ab5244a8e04103fc59cdad,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2634.7764
+      objectReference: {fileID: 0}
+    - target: {fileID: 5092758867627984872, guid: 44281333b3ab5244a8e04103fc59cdad,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 12.70408
+      objectReference: {fileID: 0}
     - target: {fileID: 5092758867627984876, guid: 44281333b3ab5244a8e04103fc59cdad,
         type: 3}
       propertyPath: target
@@ -2625,6 +2640,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bird_Trigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 5092758867627984877, guid: 44281333b3ab5244a8e04103fc59cdad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44281333b3ab5244a8e04103fc59cdad, type: 3}
@@ -21560,6 +21580,11 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1176348913}
+    - target: {fileID: 1887380424846414281, guid: 7bd9acb9fda102f4a88fd6237cd85d70,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1922278906616700009, guid: 7bd9acb9fda102f4a88fd6237cd85d70,
         type: 3}
       propertyPath: m_IsActive
