@@ -64,6 +64,8 @@ public class GliderController : MonoBehaviour
     public GameObject fogcard;
     public float distanceBetweenFog;
 
+    public bool useTestUI = false;
+
     // public LightScript lightScript;
 
     //Start
@@ -194,17 +196,6 @@ public class GliderController : MonoBehaviour
         flyingStates.rot.x += flyingStates.drop;
         flyingStates.rb.velocity += -Vector3.up * slowFallMultiplier;
 
-        //Raycast test
-
-        /*
-        RaycastHit hit;
-
-        Ray fogTest = new Ray(transform.position, fogcard.transform.position);
-        if (Physics.Raycast(fogTest, out hit))
-        {
-            distanceBetweenFog = hit.distance;
-        }
-        */
     }
 
     private void OnTriggerStay(Collider other)
@@ -227,7 +218,7 @@ public class GliderController : MonoBehaviour
             deathFadeAnim.SetTrigger("Death_Fade");
             StartCoroutine("WaitToEndGame");
         }
-        
+
 
         else if (other.tag == ("Oxygen"))
         {
@@ -238,6 +229,10 @@ public class GliderController : MonoBehaviour
         else if (other.tag == ("UpDraft"))
         {
             inUpDraft = true;
+        }
+        else if (other.tag == ("EndMaxSpeed"))
+        {
+            flyingStates.standardMaxVelocity = flyingStates.standardMaxVelocity + 50;
         }
     }
 

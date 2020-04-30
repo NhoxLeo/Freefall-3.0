@@ -45,6 +45,7 @@ public class AudioManager : MonoBehaviour
             s.source.playOnAwake = s.playOnAwake;
             
             
+            
 
             s.source.outputAudioMixerGroup = soundFXMixer;
         }

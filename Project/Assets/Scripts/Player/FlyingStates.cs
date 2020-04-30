@@ -95,8 +95,8 @@ public class FlyingStates : MonoBehaviour
     public Vector3 baseVelocity;
     public Vector3 addedVelocity;
 
-    [SerializeField]
-    private float standardMaxVelocity;
+    
+    public float standardMaxVelocity;
     [SerializeField]
     private float divingMaxVelocity;
     [SerializeField]
@@ -223,13 +223,14 @@ public class FlyingStates : MonoBehaviour
     [SerializeField]
     private float riseMultplyerPlusThreshold;
 
+    private GliderController gliderController;
 
-
-
+    public GameObject testUIGO;
 
     //Start
     private void Start()
     {
+        gliderController = GetComponent<GliderController>();
         isStablized = true;
         burstEm = false;
         fadeInEm = false;
@@ -237,15 +238,24 @@ public class FlyingStates : MonoBehaviour
         //wings out
         WingsOut();
 
-        boostFuel = maxBoostFuel / 2;
+        boostFuel = 0;
         rb = GetComponent<Rigidbody>();
         rot = transform.eulerAngles;
     }
 
     private void Update()
     {
-        speedUI.text = ("Speed " + Speed);
-        maxSpeedUI.text = ("MaxSpeed " + currentTargetSpeed);
+        if (gliderController.useTestUI == true)
+        {
+            testUIGO.SetActive(true);
+            speedUI.text = ("Speed " + Speed);
+            maxSpeedUI.text = ("MaxSpeed " + currentTargetSpeed);
+        }
+        else
+        {
+            testUIGO.SetActive(false);
+        }
+
 
         boostFuel = Mathf.Clamp(boostFuel, 0, maxBoostFuel);
         WingsFader();
@@ -391,6 +401,7 @@ public class FlyingStates : MonoBehaviour
                 stablizeCounter += stablizeStep;
                 if (stablizeCounter >= stablizeTarget)
                 {
+                    //Play animation here
                     isStablized = false;
                     canTurnUp = false;
                 }
@@ -485,7 +496,18 @@ public class FlyingStates : MonoBehaviour
 
     public void ResetSpeedAndForceValues()
     {
-        currentTargetSpeed = standardMaxVelocity;
+        //currentTargetSpeed = standardMaxVelocity;
+
+        if (currentTargetSpeed > standardMaxVelocity)
+        {
+            currentTargetSpeed = Mathf.Clamp(currentTargetSpeed, standardMaxVelocity, currentTargetSpeed);
+            currentTargetSpeed -= 1;
+        }
+        else if(currentTargetSpeed < standardMaxVelocity)
+        {
+            currentTargetSpeed = Mathf.Clamp(currentTargetSpeed, currentTargetSpeed, standardMaxVelocity);
+            currentTargetSpeed += 1;
+        }
         currentTargetForce = standardForce;
     }
 

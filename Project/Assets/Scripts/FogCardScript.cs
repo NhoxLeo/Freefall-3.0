@@ -11,6 +11,7 @@ public class FogCardScript : MonoBehaviour
     public float fog1Distance;
     public float fogDensity;
     public Material materialFogDensity;
+    public Renderer rendererFogDensity;
     void Start()
     {
         fogCard = this.gameObject;
