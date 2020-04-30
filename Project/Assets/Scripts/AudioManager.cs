@@ -67,6 +67,7 @@ public class AudioManager : MonoBehaviour
     {
         PlayMusic("Theme");
         PlayAudio("Flying");
+        PlayAudio("Flying 2");
     }
     public void PlayAudio(string name)
     {
