@@ -477,6 +477,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oxygen Plant (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8704529850070546168, guid: 6b23e6f490cdf4740822f791820afd56,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b23e6f490cdf4740822f791820afd56, type: 3}
 --- !u!1 &23707856
@@ -787,6 +792,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BT_v04
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 91eecfe816c8cf644b1cb1e39f8522b4,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91eecfe816c8cf644b1cb1e39f8522b4, type: 3}
@@ -2578,6 +2588,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallStraight_01 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 9443a0d11dee9a14996fb1cb69e0621a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9443a0d11dee9a14996fb1cb69e0621a, type: 3}
 --- !u!4 &174038943 stripped
@@ -2946,6 +2961,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pillar
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 0b5210f0ca7b7d242bf54989ea575b94,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b5210f0ca7b7d242bf54989ea575b94, type: 3}
@@ -3376,6 +3396,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pillar (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 0b5210f0ca7b7d242bf54989ea575b94,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b5210f0ca7b7d242bf54989ea575b94, type: 3}
@@ -3974,6 +3999,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallStraight_01 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 9443a0d11dee9a14996fb1cb69e0621a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9443a0d11dee9a14996fb1cb69e0621a, type: 3}
 --- !u!1001 &253268593
@@ -4391,6 +4421,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pillar (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 0b5210f0ca7b7d242bf54989ea575b94,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b5210f0ca7b7d242bf54989ea575b94, type: 3}
@@ -4949,6 +4984,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar_base
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 697958952b2d66a4fb1835167ce58d5f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 2618675992267900371, guid: 697958952b2d66a4fb1835167ce58d5f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5199,6 +5239,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ArchTest (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 30ced49318becb2499cdca4bda66f904,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30ced49318becb2499cdca4bda66f904, type: 3}
@@ -6397,6 +6442,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pillar (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 0b5210f0ca7b7d242bf54989ea575b94,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b5210f0ca7b7d242bf54989ea575b94, type: 3}
@@ -7647,6 +7697,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallStraight_01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 9443a0d11dee9a14996fb1cb69e0621a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9443a0d11dee9a14996fb1cb69e0621a, type: 3}
 --- !u!4 &485722031 stripped
@@ -7761,6 +7816,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BT_v02
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 9513a5ebdc025904b90893c2d0f5ed38,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9513a5ebdc025904b90893c2d0f5ed38, type: 3}
@@ -8044,6 +8104,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pillar
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 0b5210f0ca7b7d242bf54989ea575b94,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b5210f0ca7b7d242bf54989ea575b94, type: 3}
@@ -8603,6 +8668,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oxygen Plant (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8704529850070546168, guid: 6b23e6f490cdf4740822f791820afd56,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b23e6f490cdf4740822f791820afd56, type: 3}
 --- !u!1001 &545377948
@@ -9115,6 +9185,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pillar
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 0b5210f0ca7b7d242bf54989ea575b94,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b5210f0ca7b7d242bf54989ea575b94, type: 3}
@@ -10561,6 +10636,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CavernHoleArch (3)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 3eb55cb89aa6f8b49a0ab747f600d962,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3eb55cb89aa6f8b49a0ab747f600d962, type: 3}
 --- !u!4 &661573625 stripped
@@ -11297,6 +11377,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pillar (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 0b5210f0ca7b7d242bf54989ea575b94,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b5210f0ca7b7d242bf54989ea575b94, type: 3}
@@ -12875,6 +12960,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallStraight_01 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 9443a0d11dee9a14996fb1cb69e0621a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9443a0d11dee9a14996fb1cb69e0621a, type: 3}
 --- !u!4 &813031465 stripped
@@ -13828,6 +13918,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ArchTest (4)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 30ced49318becb2499cdca4bda66f904,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30ced49318becb2499cdca4bda66f904, type: 3}
 --- !u!1001 &892675259
@@ -14227,6 +14322,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar (3)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 0b5210f0ca7b7d242bf54989ea575b94,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b5210f0ca7b7d242bf54989ea575b94, type: 3}
 --- !u!4 &913382852 stripped
@@ -14444,6 +14544,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallStraight_01 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 9443a0d11dee9a14996fb1cb69e0621a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9443a0d11dee9a14996fb1cb69e0621a, type: 3}
 --- !u!4 &939876725 stripped
@@ -14558,6 +14663,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BT_v03
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 1c3d7fc1206557e4e98d37f9993944b5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c3d7fc1206557e4e98d37f9993944b5, type: 3}
@@ -15007,6 +15117,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pillar (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 0b5210f0ca7b7d242bf54989ea575b94,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b5210f0ca7b7d242bf54989ea575b94, type: 3}
@@ -17630,6 +17745,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar (2)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 0b5210f0ca7b7d242bf54989ea575b94,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b5210f0ca7b7d242bf54989ea575b94, type: 3}
 --- !u!4 &1180990108 stripped
@@ -18002,6 +18122,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar (2)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 0b5210f0ca7b7d242bf54989ea575b94,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b5210f0ca7b7d242bf54989ea575b94, type: 3}
 --- !u!4 &1190947376 stripped
@@ -18171,6 +18296,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar (3)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 0b5210f0ca7b7d242bf54989ea575b94,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b5210f0ca7b7d242bf54989ea575b94, type: 3}
 --- !u!4 &1200314588 stripped
@@ -18264,6 +18394,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Oxygen Plant (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8704529850070546168, guid: 6b23e6f490cdf4740822f791820afd56,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b23e6f490cdf4740822f791820afd56, type: 3}
@@ -19014,6 +19149,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ArchTest
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 30ced49318becb2499cdca4bda66f904,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30ced49318becb2499cdca4bda66f904, type: 3}
@@ -22408,6 +22548,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar (1)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 0b5210f0ca7b7d242bf54989ea575b94,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b5210f0ca7b7d242bf54989ea575b94, type: 3}
 --- !u!4 &1455081497 stripped
@@ -22898,7 +23043,7 @@ GameObject:
   - component: {fileID: 1492067361}
   m_Layer: 0
   m_Name: pCylinder1 (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23106,6 +23251,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pillar
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 0b5210f0ca7b7d242bf54989ea575b94,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b5210f0ca7b7d242bf54989ea575b94, type: 3}
@@ -23684,6 +23834,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MountainTest_v02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: b6993e21bf38edf4a950c6aee3fcd373,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6993e21bf38edf4a950c6aee3fcd373, type: 3}
@@ -25119,6 +25274,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar (3)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 0b5210f0ca7b7d242bf54989ea575b94,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b5210f0ca7b7d242bf54989ea575b94, type: 3}
 --- !u!4 &1602393660 stripped
@@ -26058,6 +26218,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallStraight_01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 9443a0d11dee9a14996fb1cb69e0621a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9443a0d11dee9a14996fb1cb69e0621a, type: 3}
 --- !u!4 &1640238775 stripped
@@ -26320,7 +26485,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1641742576}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 587.0849, y: -97, z: -3379}
+  m_LocalPosition: {x: 587.0849, y: 188, z: -3379}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1396155179}
@@ -26396,6 +26561,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Top_broken_pillar
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: be53a66db844c574caafa27d2f997f41,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 8160817383737747161, guid: be53a66db844c574caafa27d2f997f41,
         type: 3}
@@ -33002,6 +33172,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pillar (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 0b5210f0ca7b7d242bf54989ea575b94,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b5210f0ca7b7d242bf54989ea575b94, type: 3}
@@ -40007,6 +40182,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ArchTest (3)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 30ced49318becb2499cdca4bda66f904,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30ced49318becb2499cdca4bda66f904, type: 3}
 --- !u!4 &1976232377 stripped
@@ -41277,6 +41457,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BT_v01
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 6f2a6710fdffe374e93f1fe12b9c82a3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f2a6710fdffe374e93f1fe12b9c82a3, type: 3}
 --- !u!4 &2069918093 stripped
@@ -41668,6 +41853,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ArchTest (1)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 30ced49318becb2499cdca4bda66f904,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30ced49318becb2499cdca4bda66f904, type: 3}
 --- !u!4 &2101155913 stripped
@@ -41709,7 +41899,7 @@ GameObject:
   - component: {fileID: 2124629179}
   m_Layer: 0
   m_Name: pCylinder1 (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
