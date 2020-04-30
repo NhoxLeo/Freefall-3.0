@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &746470611702382936
+--- !u!1 &709033771361847667
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,30 +8,30 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5033629553189104756}
+  - component: {fileID: 8283851578345196545}
   m_Layer: 0
-  m_Name: Freefall_Bird_REFERENCE:R_Shoulder_J
+  m_Name: Freefall_Bird_REFERENCE:L_Shoulder_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5033629553189104756
+--- !u!4 &8283851578345196545
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 746470611702382936}
-  m_LocalRotation: {x: -0.03478514, y: -0.6374525, z: 0.031861804, w: 0.7690443}
-  m_LocalPosition: {x: -0.0069966726, y: 0.00471857, z: -0.0070896777}
+  m_GameObject: {fileID: 709033771361847667}
+  m_LocalRotation: {x: -0.0045645456, y: 0.6953483, z: 0.00036917735, w: 0.71865827}
+  m_LocalPosition: {x: -0.0068963054, y: 0.0047185738, z: 0.0071695796}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4477434144721260611}
-  m_Father: {fileID: 8337422429225783508}
-  m_RootOrder: 2
+  - {fileID: 5291510995405747100}
+  m_Father: {fileID: 4810987280314173053}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &776013298181246719
+--- !u!1 &915309207504169775
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -39,30 +39,32 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8655724701262783797}
+  - component: {fileID: 4810987280314173053}
   m_Layer: 0
-  m_Name: Freefall_Bird_REFERENCE:L_Elbow_J
+  m_Name: Freefall_Bird_REFERENCE:Neck_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8655724701262783797
+--- !u!4 &4810987280314173053
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 776013298181246719}
-  m_LocalRotation: {x: 0.0056459117, y: 0.00032906, z: 0.0100343535, w: 0.99993366}
-  m_LocalPosition: {x: -0.026124874, y: -0.0017853124, z: -0.0000000014580654}
+  m_GameObject: {fileID: 915309207504169775}
+  m_LocalRotation: {x: -1.2246467e-16, y: 0.00033579613, z: 4.1123165e-20, w: 0.99999994}
+  m_LocalPosition: {x: -0.017942002, y: 0, z: 0.00014682107}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 3624155003008579645}
-  m_Father: {fileID: 4865666510221154984}
+  - {fileID: 4815885474141634327}
+  - {fileID: 8283851578345196545}
+  - {fileID: 8406951252391541469}
+  m_Father: {fileID: 8596496839861096097}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1441323226379306912
+--- !u!1 &1139420157261729614
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -70,8 +72,69 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2183794500572071585}
-  - component: {fileID: 420223868689711985}
+  - component: {fileID: 233029607600418452}
+  m_Layer: 0
+  m_Name: Freefall_Bird_REFERENCE:L_Wrist_J
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &233029607600418452
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1139420157261729614}
+  m_LocalRotation: {x: 0.00134519, y: 0.00008156084, z: -0.012725018, w: 0.99991816}
+  m_LocalPosition: {x: -0.017196711, y: -0.0008288952, z: 3.0725927e-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8937937662715034699}
+  m_Father: {fileID: 5291510995405747100}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2265791869284231709
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8291332083490417006}
+  m_Layer: 0
+  m_Name: Freefall_Bird_REFERENCE:Tail_Tip_J
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8291332083490417006
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2265791869284231709}
+  m_LocalRotation: {x: -8.659539e-17, y: 0.7086834, z: 8.659539e-17, w: 0.70552665}
+  m_LocalPosition: {x: -0.028492145, y: 3.1139392e-18, z: 0.0001272739}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7359309154121103743}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2697916902930895113
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3404179742904078344}
+  - component: {fileID: 3793325657170646488}
   m_Layer: 0
   m_Name: Freefall_Bird_REFERENCE:Bird_Rig_Test
   m_TagString: Untagged
@@ -79,27 +142,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2183794500572071585
+--- !u!4 &3404179742904078344
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1441323226379306912}
+  m_GameObject: {fileID: 2697916902930895113}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 6916084587778364540}
+  m_Father: {fileID: 7965364423503725269}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!137 &420223868689711985
+--- !u!137 &3793325657170646488
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1441323226379306912}
+  m_GameObject: {fileID: 2697916902930895113}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -111,7 +174,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e6c5f904452a0364ea21832c6812f9fa, type: 2}
+  - {fileID: 2100000, guid: dca0b076940d49e4fa3e486284418e10, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -138,26 +201,26 @@ SkinnedMeshRenderer:
   m_SkinnedMotionVectors: 1
   m_Mesh: {fileID: -6124888594782164746, guid: b90e191cb074e5d4a94f886c87f28723, type: 3}
   m_Bones:
-  - {fileID: 5061081314042337288}
-  - {fileID: 8337422429225783508}
-  - {fileID: 8333067395249793470}
-  - {fileID: 6292076617301176278}
-  - {fileID: 4783047577980567495}
-  - {fileID: 4865666510221154984}
-  - {fileID: 8655724701262783797}
-  - {fileID: 3624155003008579645}
-  - {fileID: 5582660362372311778}
-  - {fileID: 5033629553189104756}
-  - {fileID: 4477434144721260611}
-  - {fileID: 4311855425554148154}
-  - {fileID: 7448908428794443776}
+  - {fileID: 8596496839861096097}
+  - {fileID: 4810987280314173053}
+  - {fileID: 4815885474141634327}
+  - {fileID: 7359309154121103743}
+  - {fileID: 8291332083490417006}
+  - {fileID: 8283851578345196545}
+  - {fileID: 5291510995405747100}
+  - {fileID: 233029607600418452}
+  - {fileID: 8937937662715034699}
+  - {fileID: 8406951252391541469}
+  - {fileID: 1104363044042753770}
+  - {fileID: 767511195225882003}
+  - {fileID: 6210358644225650345}
   m_BlendShapeWeights: []
-  m_RootBone: {fileID: 5061081314042337288}
+  m_RootBone: {fileID: 8596496839861096097}
   m_AABB:
     m_Center: {x: -0.048525393, y: -0.0015137056, z: 0.00020403042}
     m_Extent: {x: 0.049584538, y: 0.011734452, z: 0.073998705}
   m_DirtyAABB: 0
---- !u!1 &2016585894226717173
+--- !u!1 &3065874753464991580
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -165,7 +228,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5582660362372311778}
+  - component: {fileID: 8937937662715034699}
   m_Layer: 0
   m_Name: Freefall_Bird_REFERENCE:L_Wingtip_J
   m_TagString: Untagged
@@ -173,21 +236,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5582660362372311778
+--- !u!4 &8937937662715034699
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2016585894226717173}
+  m_GameObject: {fileID: 3065874753464991580}
   m_LocalRotation: {x: 2.736625e-19, y: -0.024863794, z: -1.0164735e-19, w: 0.99969083}
   m_LocalPosition: {x: -0.023344211, y: -0.0017215514, z: 6.7568423e-10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 3624155003008579645}
+  m_Father: {fileID: 233029607600418452}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &3315145500865051828
+--- !u!1 &4263653099474130929
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -195,60 +258,30 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4783047577980567495}
+  - component: {fileID: 8406951252391541469}
   m_Layer: 0
-  m_Name: Freefall_Bird_REFERENCE:Tail_Tip_J
+  m_Name: Freefall_Bird_REFERENCE:R_Shoulder_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4783047577980567495
+--- !u!4 &8406951252391541469
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3315145500865051828}
-  m_LocalRotation: {x: -8.659539e-17, y: 0.7086834, z: 8.659539e-17, w: 0.70552665}
-  m_LocalPosition: {x: -0.028492145, y: 3.1139392e-18, z: 0.0001272739}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 6292076617301176278}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &4082100207702728666
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4865666510221154984}
-  m_Layer: 0
-  m_Name: Freefall_Bird_REFERENCE:L_Shoulder_J
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4865666510221154984
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4082100207702728666}
-  m_LocalRotation: {x: -0.0045645456, y: 0.6953483, z: 0.00036917735, w: 0.71865827}
-  m_LocalPosition: {x: -0.0068963054, y: 0.0047185738, z: 0.0071695796}
+  m_GameObject: {fileID: 4263653099474130929}
+  m_LocalRotation: {x: -0.03478514, y: -0.6374525, z: 0.031861804, w: 0.7690443}
+  m_LocalPosition: {x: -0.0069966726, y: 0.00471857, z: -0.0070896777}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 8655724701262783797}
-  m_Father: {fileID: 8337422429225783508}
-  m_RootOrder: 1
+  - {fileID: 1104363044042753770}
+  m_Father: {fileID: 4810987280314173053}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &4450579151174385030
+--- !u!1 &4302209831596365910
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -256,32 +289,30 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8337422429225783508}
+  - component: {fileID: 5291510995405747100}
   m_Layer: 0
-  m_Name: Freefall_Bird_REFERENCE:Neck_J
+  m_Name: Freefall_Bird_REFERENCE:L_Elbow_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8337422429225783508
+--- !u!4 &5291510995405747100
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4450579151174385030}
-  m_LocalRotation: {x: -1.2246467e-16, y: 0.00033579613, z: 4.1123165e-20, w: 0.99999994}
-  m_LocalPosition: {x: -0.017942002, y: 0, z: 0.00014682107}
+  m_GameObject: {fileID: 4302209831596365910}
+  m_LocalRotation: {x: 0.0056459117, y: 0.00032906, z: 0.0100343535, w: 0.99993366}
+  m_LocalPosition: {x: -0.026124874, y: -0.0017853124, z: -0.0000000014580654}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 8333067395249793470}
-  - {fileID: 4865666510221154984}
-  - {fileID: 5033629553189104756}
-  m_Father: {fileID: 5061081314042337288}
+  - {fileID: 233029607600418452}
+  m_Father: {fileID: 8283851578345196545}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &4512745842132474343
+--- !u!1 &4667401832598199962
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -289,30 +320,30 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3624155003008579645}
+  - component: {fileID: 1104363044042753770}
   m_Layer: 0
-  m_Name: Freefall_Bird_REFERENCE:L_Wrist_J
+  m_Name: Freefall_Bird_REFERENCE:R_Elbow_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3624155003008579645
+--- !u!4 &1104363044042753770
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4512745842132474343}
-  m_LocalRotation: {x: 0.00134519, y: 0.00008156084, z: -0.012725018, w: 0.99991816}
-  m_LocalPosition: {x: -0.017196711, y: -0.0008288952, z: 3.0725927e-10}
+  m_GameObject: {fileID: 4667401832598199962}
+  m_LocalRotation: {x: 0.0009863771, y: -0.06258584, z: -0.014356537, w: 0.9979359}
+  m_LocalPosition: {x: -0.026174966, y: 0.00065637595, z: 0.0003705596}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 5582660362372311778}
-  m_Father: {fileID: 8655724701262783797}
+  - {fileID: 767511195225882003}
+  m_Father: {fileID: 8406951252391541469}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &5095461581105563630
+--- !u!1 &5642768814117792481
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -320,61 +351,30 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5061081314042337288}
+  - component: {fileID: 7359309154121103743}
   m_Layer: 0
-  m_Name: Freefall_Bird_REFERENCE:Head_Root_J
+  m_Name: Freefall_Bird_REFERENCE:Tail_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5061081314042337288
+--- !u!4 &7359309154121103743
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5095461581105563630}
-  m_LocalRotation: {x: 3.3369707e-19, y: -0.70982635, z: -3.3369707e-19, w: 0.7043767}
-  m_LocalPosition: {x: -0, y: 0, z: 0.052195344}
+  m_GameObject: {fileID: 5642768814117792481}
+  m_LocalRotation: {x: 0, y: -0.0022321262, z: -0, w: 0.9999975}
+  m_LocalPosition: {x: -0.022317894, y: 2.439254e-18, z: -0.00000007464985}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 8337422429225783508}
-  m_Father: {fileID: 6916084587778364540}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &5282758919023849087
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8333067395249793470}
-  m_Layer: 0
-  m_Name: Freefall_Bird_REFERENCE:Hip_J
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8333067395249793470
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5282758919023849087}
-  m_LocalRotation: {x: 0, y: 0.0035210613, z: -0, w: 0.9999938}
-  m_LocalPosition: {x: -0.023593199, y: 1.1449196e-18, z: 0.00015724452}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 6292076617301176278}
-  m_Father: {fileID: 8337422429225783508}
+  - {fileID: 8291332083490417006}
+  m_Father: {fileID: 4815885474141634327}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &5546931349495047322
+--- !u!1 &6400161962754289862
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -382,105 +382,44 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7448908428794443776}
+  - component: {fileID: 7965364423503725269}
+  - component: {fileID: 188549188939695}
+  - component: {fileID: 5159347696683742353}
+  - component: {fileID: 6400161962754289857}
   m_Layer: 0
-  m_Name: Freefall_Bird_REFERENCE:R_Wingtip_J
+  m_Name: Orbit_Bird_Anti
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7448908428794443776
+--- !u!4 &7965364423503725269
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5546931349495047322}
-  m_LocalRotation: {x: -0.0000009656966, y: -0.00005093731, z: 0.000004714719, w: 1}
-  m_LocalPosition: {x: -0.023403987, y: 0.00040851746, z: 0.000000042508628}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4311855425554148154}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &6488327092282855189
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4311855425554148154}
-  m_Layer: 0
-  m_Name: Freefall_Bird_REFERENCE:R_Wrist_J
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4311855425554148154
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6488327092282855189}
-  m_LocalRotation: {x: -0.0016991313, y: -0.027827611, z: 0.01271507, w: 0.99953043}
-  m_LocalPosition: {x: -0.017214077, y: 0.00030003136, z: -0.00000063799}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 7448908428794443776}
-  m_Father: {fileID: 4477434144721260611}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &7611513909799003759
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6916084587778364540}
-  - component: {fileID: 3562590896685971718}
-  - component: {fileID: 8568618989418996280}
-  - component: {fileID: 601917612726601672}
-  m_Layer: 0
-  m_Name: Fly_Straight_Bird_Purple
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6916084587778364540
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7611513909799003759}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.5, y: 227.8, z: 198}
+  m_GameObject: {fileID: 6400161962754289862}
+  m_LocalRotation: {x: -0, y: -0.710119, z: -0, w: 0.7040817}
+  m_LocalPosition: {x: 582, y: 866, z: -9085}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children:
-  - {fileID: 2183794500572071585}
-  - {fileID: 5061081314042337288}
+  - {fileID: 3404179742904078344}
+  - {fileID: 8596496839861096097}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &3562590896685971718
+  m_LocalEulerAnglesHint: {x: 0, y: -90.489006, z: 0}
+--- !u!95 &188549188939695
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7611513909799003759}
+  m_GameObject: {fileID: 6400161962754289862}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: b90e191cb074e5d4a94f886c87f28723, type: 3}
-  m_Controller: {fileID: 9100000, guid: 1fd6928aabb03724592bafde782ce6e7, type: 2}
+  m_Controller: {fileID: 9100000, guid: a70304acf47678f438a103f07243a0cc, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -489,13 +428,13 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!54 &8568618989418996280
+--- !u!54 &5159347696683742353
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7611513909799003759}
+  m_GameObject: {fileID: 6400161962754289862}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -505,20 +444,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &601917612726601672
+--- !u!114 &6400161962754289857
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7611513909799003759}
+  m_GameObject: {fileID: 6400161962754289862}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1df1fb99ab213e147a3aeb5f27aa3b7d, type: 3}
+  m_Script: {fileID: 11500000, guid: b5a6c28da4640a14385b17a1a5ba8459, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
---- !u!1 &8193604404803913779
+  target: {fileID: 0}
+  speed: 20
+--- !u!1 &7744887246624135612
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -526,30 +466,30 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4477434144721260611}
+  - component: {fileID: 767511195225882003}
   m_Layer: 0
-  m_Name: Freefall_Bird_REFERENCE:R_Elbow_J
+  m_Name: Freefall_Bird_REFERENCE:R_Wrist_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4477434144721260611
+--- !u!4 &767511195225882003
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8193604404803913779}
-  m_LocalRotation: {x: 0.0009863771, y: -0.06258584, z: -0.014356537, w: 0.9979359}
-  m_LocalPosition: {x: -0.026174966, y: 0.00065637595, z: 0.0003705596}
+  m_GameObject: {fileID: 7744887246624135612}
+  m_LocalRotation: {x: -0.0016991313, y: -0.027827611, z: 0.01271507, w: 0.99953043}
+  m_LocalPosition: {x: -0.017214077, y: 0.00030003136, z: -0.00000063799}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4311855425554148154}
-  m_Father: {fileID: 5033629553189104756}
+  - {fileID: 6210358644225650345}
+  m_Father: {fileID: 1104363044042753770}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &9169138219693423688
+--- !u!1 &8630798732694032711
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -557,26 +497,87 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6292076617301176278}
+  - component: {fileID: 8596496839861096097}
   m_Layer: 0
-  m_Name: Freefall_Bird_REFERENCE:Tail_J
+  m_Name: Freefall_Bird_REFERENCE:Head_Root_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6292076617301176278
+--- !u!4 &8596496839861096097
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9169138219693423688}
-  m_LocalRotation: {x: 0, y: -0.0022321262, z: -0, w: 0.9999975}
-  m_LocalPosition: {x: -0.022317894, y: 2.439254e-18, z: -0.00000007464985}
+  m_GameObject: {fileID: 8630798732694032711}
+  m_LocalRotation: {x: 3.3369707e-19, y: -0.70982635, z: -3.3369707e-19, w: 0.7043767}
+  m_LocalPosition: {x: -0, y: 0, z: 0.052195344}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4783047577980567495}
-  m_Father: {fileID: 8333067395249793470}
+  - {fileID: 4810987280314173053}
+  m_Father: {fileID: 7965364423503725269}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8656015004205414614
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4815885474141634327}
+  m_Layer: 0
+  m_Name: Freefall_Bird_REFERENCE:Hip_J
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4815885474141634327
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8656015004205414614}
+  m_LocalRotation: {x: 0, y: 0.0035210613, z: -0, w: 0.9999938}
+  m_LocalPosition: {x: -0.023593199, y: 1.1449196e-18, z: 0.00015724452}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7359309154121103743}
+  m_Father: {fileID: 4810987280314173053}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &9046287287747179059
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6210358644225650345}
+  m_Layer: 0
+  m_Name: Freefall_Bird_REFERENCE:R_Wingtip_J
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6210358644225650345
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9046287287747179059}
+  m_LocalRotation: {x: -0.0000009656966, y: -0.00005093731, z: 0.000004714719, w: 1}
+  m_LocalPosition: {x: -0.023403987, y: 0.00040851746, z: 0.000000042508628}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 767511195225882003}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

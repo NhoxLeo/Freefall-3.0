@@ -133,6 +133,14 @@ MonoBehaviour:
     mute: 0
     playOnAwake: 0
     source: {fileID: 0}
+  - name: Flying 2
+    clip: {fileID: 8300000, guid: 9cff9815a6d2dec4ab5ae27f730fe392, type: 3}
+    volumn: 0.03
+    pitch: 1
+    loop: 0
+    mute: 0
+    playOnAwake: 0
+    source: {fileID: 0}
   songs:
   - name: Theme
     clip: {fileID: 8300000, guid: c0d5fd54417a54d10bfd10e3db149967, type: 3}

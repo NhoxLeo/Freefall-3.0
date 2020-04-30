@@ -122,11 +122,11 @@ public class GliderController : MonoBehaviour
 
         rotationController.RotatingMesh();
 
-        if (transform.position.y <= 0)
+        /*if (transform.position.y <= 0)
         {
             transform.position = StartPosition.transform.position;
         }
-
+        */
     }
 
     private void FixedUpdate()
