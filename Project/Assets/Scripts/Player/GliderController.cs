@@ -76,7 +76,7 @@ public class GliderController : MonoBehaviour
     private void Start()
     {
         zone1.SetActive(true);
-        zone2.SetActive(true);
+        zone2.SetActive(false);
 
         inUpDraft = false;
         audio = FindObjectOfType<AudioManager>();
@@ -249,6 +249,10 @@ public class GliderController : MonoBehaviour
         else if (other.tag == ("Zone2Exit"))
         {
             zone2.SetActive(false);
+        }
+        else if(other.tag == ("Zone2Enter"))
+        {
+            zone2.SetActive(true);
         }
     }
 

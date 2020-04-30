@@ -11,6 +11,7 @@ TagManager:
   - EndMaxSpeed
   - Zone1Exit
   - Zone2Exit
+  - Zone2Enter
   layers:
   - Default
   - TransparentFX
