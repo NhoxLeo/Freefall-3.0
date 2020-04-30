@@ -16,7 +16,7 @@ public class GliderController : MonoBehaviour
     public GameObject boostLight;
     public GameObject EndGameUI;
 
-    public Animator deathFadeAnim;
+    public Animator endFadeAnim;
     public GameObject creditsMenu;
 
 
@@ -222,7 +222,7 @@ public class GliderController : MonoBehaviour
             Debug.Log("Finish");
             FindObjectOfType<GameMaster>().lastCheckpointPos = new Vector3(480.8f, 958, -11316.4f);
             //EndGameUI.SetActive(true);
-            deathFadeAnim.SetTrigger("Death_Fade");
+            endFadeAnim.SetTrigger("EndGame");
             StartCoroutine("WaitToEndGame");
         }
 
