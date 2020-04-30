@@ -35943,15 +35943,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 997463003}
     m_Modifications:
-    - target: {fileID: 478556558526664462, guid: e4e4112715f9f97498f8c8ad0105372d,
+    - target: {fileID: 478556560118285274, guid: e4e4112715f9f97498f8c8ad0105372d,
         type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 478556560118285275, guid: e4e4112715f9f97498f8c8ad0105372d,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
+      propertyPath: m_TagString
+      value: Finish
       objectReference: {fileID: 0}
     - target: {fileID: 4855569440028233883, guid: e4e4112715f9f97498f8c8ad0105372d,
         type: 3}
@@ -36013,13 +36008,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Final_Artifact
       objectReference: {fileID: 0}
-    - target: {fileID: 9141520673172613322, guid: e4e4112715f9f97498f8c8ad0105372d,
-        type: 3}
-      propertyPath: m_TagString
-      value: Finish
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 478556558526664462, guid: e4e4112715f9f97498f8c8ad0105372d, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4e4112715f9f97498f8c8ad0105372d, type: 3}
 --- !u!4 &5027809430863319355 stripped
 Transform:
