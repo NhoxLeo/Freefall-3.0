@@ -8,6 +8,9 @@ TagManager:
   - Oxygen
   - Obstacle
   - GM
+  - EndMaxSpeed
+  - Zone1Exit
+  - Zone2Exit
   layers:
   - Default
   - TransparentFX

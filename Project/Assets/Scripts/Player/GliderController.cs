@@ -66,11 +66,18 @@ public class GliderController : MonoBehaviour
 
     public bool useTestUI = false;
 
+
+    public GameObject zone1;
+    public GameObject zone2;
+
     // public LightScript lightScript;
 
     //Start
     private void Start()
     {
+        zone1.SetActive(true);
+        zone2.SetActive(true);
+
         inUpDraft = false;
         audio = FindObjectOfType<AudioManager>();
 
@@ -233,6 +240,15 @@ public class GliderController : MonoBehaviour
         else if (other.tag == ("EndMaxSpeed"))
         {
             flyingStates.standardMaxVelocity = flyingStates.standardMaxVelocity + 50;
+        }
+
+        else if (other.tag == ("Zone1Exit")) 
+        {
+            zone1.SetActive(false);
+        }
+        else if (other.tag == ("Zone2Exit"))
+        {
+            zone2.SetActive(false);
         }
     }
 
