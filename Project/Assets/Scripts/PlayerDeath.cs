@@ -7,16 +7,18 @@ public class PlayerDeath : MonoBehaviour
 {
     public Animator anim;
     private GliderController gliderController;
+   
 
     private void Start()
     {
         gliderController = GetComponent<GliderController>();
+        FindObjectOfType<AudioManager>();
     }
     public void Death()
     {
         anim.SetTrigger("Death_Fade");
         Invoke("ReloadCheckpoint", 2f);
-        GameObject.FindObjectOfType<AudioManager>().PlayAudio("Dead");
+        FindObjectOfType<AudioManager>().PlayAudio("Dead");
     }
 
     void ReloadCheckpoint()
