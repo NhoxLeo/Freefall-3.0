@@ -34,6 +34,7 @@ public class MenuController : MonoBehaviour
     public void PlayGame()
     {
         animator.SetTrigger("Fade_Out");
+        Cursor.visible = false;
         inMainMenu = false;
         mainMenuUI.SetActive(false);
         Invoke("LoadGame", 1);
@@ -43,7 +44,7 @@ public class MenuController : MonoBehaviour
     {
         if (inMainMenu == false)
         {
-            if (Input.GetKeyDown(KeyCode.Escape))
+            if (Input.GetButtonDown("PauseGame"))
             {
                 if (GameIsPaused)
                 {
@@ -70,6 +71,7 @@ public class MenuController : MonoBehaviour
 
     public void Resume()
     {
+        Cursor.visible = false;
         Time.timeScale = 1f;
         GameIsPaused = false;
         pauseMenuUI.SetActive(false);
@@ -85,6 +87,7 @@ public class MenuController : MonoBehaviour
 
     void Pause()
     {
+        Cursor.visible = true;
         Debug.Log("Paused");
         Time.timeScale = 0f;
         mainMenuUI.SetActive(false);
@@ -108,6 +111,7 @@ public class MenuController : MonoBehaviour
     }
     public void QuitToMenu()
     {
+        Cursor.visible = true;
         animator.SetTrigger("Fade_Out");
         inMainMenu = true;
         Invoke("LoadMainMenu", 1);

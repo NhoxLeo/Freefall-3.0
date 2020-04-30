@@ -223,6 +223,7 @@ public class GliderController : MonoBehaviour
             FindObjectOfType<GameMaster>().lastCheckpointPos = new Vector3(480.8f, 958, -11316.4f);
             //EndGameUI.SetActive(true);
             endFadeAnim.SetTrigger("EndGame");
+            Cursor.visible = true;
             StartCoroutine("WaitToEndGame");
         }
 
