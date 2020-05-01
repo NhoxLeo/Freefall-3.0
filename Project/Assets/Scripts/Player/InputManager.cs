@@ -64,8 +64,8 @@ public class InputManager : MonoBehaviour
     private float vertRate;
 
 
-    private float hori;
-    private float vert;
+    public float hori;
+    public float vert;
 
     public int horiSensitivity;
     public int vertSensitivity;
@@ -95,8 +95,8 @@ public class InputManager : MonoBehaviour
 
     public void AxisCounter()
     {
-        hori = Input.GetAxis("Horizontal") * horiSensitivity;
-        vert = Input.GetAxis("Vertical") * vertSensitivity;
+        hori = Input.GetAxis("Horizontal");
+        vert = Input.GetAxis("Vertical");
 
         if (hori >= 0.5f)
         {
