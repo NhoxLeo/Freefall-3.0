@@ -49596,12 +49596,22 @@ PrefabInstance:
     - target: {fileID: 876402977763883303, guid: c40fecc86b0a2f242be8fde29d1ccc68,
         type: 3}
       propertyPath: horiSensitivity
-      value: 20
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 876402977763883303, guid: c40fecc86b0a2f242be8fde29d1ccc68,
         type: 3}
       propertyPath: vertSensitivity
-      value: 22
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 876402977763883303, guid: c40fecc86b0a2f242be8fde29d1ccc68,
+        type: 3}
+      propertyPath: xRotationSpeed
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 876402977763883303, guid: c40fecc86b0a2f242be8fde29d1ccc68,
+        type: 3}
+      propertyPath: yRotationSpeed
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 876402977763883345, guid: c40fecc86b0a2f242be8fde29d1ccc68,
         type: 3}

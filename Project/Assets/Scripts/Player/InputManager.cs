@@ -158,10 +158,10 @@ public class InputManager : MonoBehaviour
     {
         if(playerControlsInverted == false)
         {
-            yaw = yRotationSpeed * horiCounter * rotationController.currentYawRotationSpeed * Time.deltaTime;
+            yaw = yRotationSpeed * hori * rotationController.currentYawRotationSpeed * Time.deltaTime;
             if (flyingStates.canTurnUp == true)
             {
-                pitch = xRotationSpeed * vertCounter * rotationController.currentPitchRotationSpeed * Time.deltaTime;
+                pitch = xRotationSpeed * vert * rotationController.currentPitchRotationSpeed * Time.deltaTime;
             }
             else if (flyingStates.canTurnUp == false)
             {
@@ -170,11 +170,11 @@ public class InputManager : MonoBehaviour
         }
         else
         {
-            yaw = yRotationSpeed * horiCounter * rotationController.currentYawRotationSpeed * Time.deltaTime;
+            yaw = yRotationSpeed * hori * rotationController.currentYawRotationSpeed * Time.deltaTime;
 
             if (flyingStates.canTurnUp == true)
             {
-                pitch = xRotationSpeed * -vertCounter * rotationController.currentPitchRotationSpeed * Time.deltaTime;
+                pitch = xRotationSpeed * -vert * rotationController.currentPitchRotationSpeed * Time.deltaTime;
             }
             else if (flyingStates.canTurnUp == false)
             {
