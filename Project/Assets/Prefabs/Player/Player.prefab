@@ -14917,6 +14917,10 @@ MonoBehaviour:
   xRotationSpeed: 50
   yRotationSpeed: 50
   playerControlsInverted: 0
+  horiCounter: 0
+  horiRate: 0.025
+  vertCounter: 0
+  vertRate: 0.025
 --- !u!114 &876402977763883358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20097,7 +20101,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.1
-  far clip plane: 999999
+  far clip plane: 1e+17
   field of view: 60
   orthographic: 0
   orthographic size: 5
