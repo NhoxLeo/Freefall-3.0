@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -54,6 +55,20 @@ public class InputManager : MonoBehaviour
 
     public bool playerControlsInverted = false;
 
+    public float horiCounter;
+    [SerializeField]
+    private float horiRate;
+
+    public float vertCounter;
+    [SerializeField]
+    private float vertRate;
+
+
+    private float hori;
+    private float vert;
+
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -73,15 +88,74 @@ public class InputManager : MonoBehaviour
         boostVariable = boostUpdater;
         LeftRollCounter();
         RightRollCounter();
+        AxisCounter();
     }
-    public void InputDataKeyboard()
+
+    public void AxisCounter()
+    {
+        hori = Input.GetAxis("Horizontal") * 10;
+        vert = Input.GetAxis("Vertical") * 10;
+
+        if (hori >= 0.5f)
+        {
+            horiCounter += horiRate;
+        }
+        else if (hori <= -0.5f)
+        {
+            horiCounter -= horiRate;
+        }
+        else if (hori <= 0.5f || hori >= -0.5f)
+        {
+            if (horiCounter > 0)
+            {
+                horiCounter -= horiRate * 20;
+                horiCounter = Mathf.Clamp(horiCounter, 0, 1);
+            }
+            else if (horiCounter < 0)
+            {
+                horiCounter += horiRate * 20;
+                horiCounter = Mathf.Clamp(horiCounter, -1, 0);
+            }
+
+        }
+
+        if (vert >= 0.5f)
+        {
+            vertCounter += vertRate;
+        }
+        else if (vert <= -0.5f)
+        {
+            vertCounter -= vertRate;
+        }
+        else if (vert <= 0.5f || vert >= -0.5f)
+        {
+
+            if (vertCounter > 0)
+            {
+                vertCounter -= vertRate * 20;
+                vertCounter = Mathf.Clamp(vertCounter, 0, 1);
+            }
+            else if (vertCounter < 0)
+            {
+                vertCounter += vertRate * 20;
+                vertCounter = Mathf.Clamp(vertCounter, -1, 0);
+            }
+
+
+        }
+
+
+
+    }
+
+    public void InputData()
     {
         if(playerControlsInverted == false)
         {
-            yaw = yRotationSpeed * Input.GetAxis("Horizontal") * rotationController.currentYawRotationSpeed * Time.deltaTime;
+            yaw = yRotationSpeed * horiCounter * rotationController.currentYawRotationSpeed * Time.deltaTime;
             if (flyingStates.canTurnUp == true)
             {
-                pitch = xRotationSpeed * Input.GetAxis("Vertical") * rotationController.currentPitchRotationSpeed * Time.deltaTime;
+                pitch = xRotationSpeed * vertCounter * rotationController.currentPitchRotationSpeed * Time.deltaTime;
             }
             else if (flyingStates.canTurnUp == false)
             {
@@ -90,11 +164,11 @@ public class InputManager : MonoBehaviour
         }
         else
         {
-            yaw = yRotationSpeed * Input.GetAxis("Horizontal") * rotationController.currentYawRotationSpeed * Time.deltaTime;
+            yaw = yRotationSpeed * horiCounter * rotationController.currentYawRotationSpeed * Time.deltaTime;
 
             if (flyingStates.canTurnUp == true)
             {
-                pitch = xRotationSpeed * -Input.GetAxis("Vertical") * rotationController.currentPitchRotationSpeed * Time.deltaTime;
+                pitch = xRotationSpeed * -vertCounter * rotationController.currentPitchRotationSpeed * Time.deltaTime;
             }
             else if (flyingStates.canTurnUp == false)
             {

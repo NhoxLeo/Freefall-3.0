@@ -6,17 +6,19 @@ public class AnimationScript : MonoBehaviour
 {
     public Animator anim;
     public AnimationScript animationScript;
-    private InputManager inputManager;
+    private InputManager input;
 
     public bool rollLeft;
     public bool rollRight;
+
+
 
 
     // Start is called before the first frame update
     void Start()
     {
         animationScript = GetComponent<AnimationScript>();
-        inputManager = GetComponent<InputManager>();
+        input = GetComponent<InputManager>();
 
         anim.SetBool("Rolling_Left", false);
 
@@ -25,9 +27,14 @@ public class AnimationScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        var x = Input.GetAxis("Horizontal");
-        var y = Input.GetAxis("Vertical");
+        //var x = Input.GetAxis("Horizontal");
+        var x = input.yaw;
+        //var y = Input.GetAxis("Vertical");
+        var y = input.pitch;
         //Calling blend tree function
+
+        y = Mathf.Clamp(y, -1, 1);
+        x = Mathf.Clamp(x, -1, 1);
         Move(x, y);
 
         if (rollRight == true)
