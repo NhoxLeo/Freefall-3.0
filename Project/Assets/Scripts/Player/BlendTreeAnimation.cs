@@ -15,14 +15,14 @@ public class BlendTreeAnimation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //anim = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
         inputManager = GetComponent<InputManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        //if (anim = null) return;
+        if (anim = null) return;
         
         x = Input.GetAxis("Horizontal");
         y = Input.GetAxis("Vertical");

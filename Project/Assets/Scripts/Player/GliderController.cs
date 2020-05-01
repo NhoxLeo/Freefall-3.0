@@ -114,7 +114,8 @@ public class GliderController : MonoBehaviour
 
         camFollow.CameraFollow();
 
-        input.InputData();
+        input.InputDataKeyboard();
+        input.InputDataController();
 
         rotationController.PlayerRotationSpeeds();
         rotationController.PlayerRotation();

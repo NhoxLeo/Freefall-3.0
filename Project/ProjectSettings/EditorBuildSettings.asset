@@ -5,16 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Main_Menu_2.unity
     guid: 73c58bb951157ee47924bae20075819c
-  - enabled: 0
-    path: Assets/Scenes/Main_GameScene.unity
-    guid: 163737564737f2d6164756279616c637
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Credits_Scene.unity
     guid: 46e8f5313f4bb0947ae5c9c79394b681
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Wingsuit Prototype 2.unity
     guid: 265156c444d1c7443b3342998b3cf3e3
+  - enabled: 1
+    path: Assets/Scenes/Main_GameScene.unity
+    guid: 1df87bcb8f8b49142a3ed1ddb256435c
   m_configObjects: {}

@@ -74,7 +74,7 @@ public class InputManager : MonoBehaviour
         LeftRollCounter();
         RightRollCounter();
     }
-    public void InputData()
+    public void InputDataKeyboard()
     {
         if(playerControlsInverted == false)
         {
@@ -101,8 +101,6 @@ public class InputManager : MonoBehaviour
                 pitch = Mathf.Clamp(pitch, 0, 1);
             }
         }
-
-        
 
 
         if (flyingStates.boostFuel <= 0)
@@ -143,7 +141,7 @@ public class InputManager : MonoBehaviour
 
         }
 
-        if (Input.GetButton("Roll_Right"))
+        if (Input.GetButtonDown("Roll_Right"))
         {
             if(canRollRight == true)
             {
@@ -158,7 +156,7 @@ public class InputManager : MonoBehaviour
             animationScript.rollRight = false;
         }
 
-        if (Input.GetButton("Roll_Left"))
+        if (Input.GetButtonDown("Roll_Left"))
         {
             if(canRollLeft == true)
             {
