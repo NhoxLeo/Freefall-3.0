@@ -67,6 +67,8 @@ public class InputManager : MonoBehaviour
     private float hori;
     private float vert;
 
+    public int horiSensitivity;
+    public int vertSensitivity;
 
 
 
@@ -93,8 +95,8 @@ public class InputManager : MonoBehaviour
 
     public void AxisCounter()
     {
-        hori = Input.GetAxis("Horizontal") * 10;
-        vert = Input.GetAxis("Vertical") * 10;
+        hori = Input.GetAxis("Horizontal") * horiSensitivity;
+        vert = Input.GetAxis("Vertical") * vertSensitivity;
 
         if (hori >= 0.5f)
         {
@@ -110,12 +112,12 @@ public class InputManager : MonoBehaviour
         {
             if (horiCounter > 0)
             {
-                horiCounter -= horiRate * 20;
+                horiCounter -= horiRate * 8;
                 horiCounter = Mathf.Clamp(horiCounter, 0, 1);
             }
             else if (horiCounter < 0)
             {
-                horiCounter += horiRate * 20;
+                horiCounter += horiRate * 8;
                 horiCounter = Mathf.Clamp(horiCounter, -1, 0);
             }
 
@@ -136,12 +138,12 @@ public class InputManager : MonoBehaviour
 
             if (vertCounter > 0)
             {
-                vertCounter -= vertRate * 20;
+                vertCounter -= vertRate * 8;
                 vertCounter = Mathf.Clamp(vertCounter, 0, 1);
             }
             else if (vertCounter < 0)
             {
-                vertCounter += vertRate * 20;
+                vertCounter += vertRate * 8;
                 vertCounter = Mathf.Clamp(vertCounter, -1, 0);
             }
 

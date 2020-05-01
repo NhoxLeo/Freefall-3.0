@@ -14920,7 +14920,7 @@ MonoBehaviour:
   horiCounter: 0
   horiRate: 0.025
   vertCounter: 0
-  vertRate: 0.025
+  vertRate: 0.045
 --- !u!114 &876402977763883358
 MonoBehaviour:
   m_ObjectHideFlags: 0

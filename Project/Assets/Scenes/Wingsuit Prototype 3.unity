@@ -49595,13 +49595,13 @@ PrefabInstance:
       objectReference: {fileID: 1176348913}
     - target: {fileID: 876402977763883303, guid: c40fecc86b0a2f242be8fde29d1ccc68,
         type: 3}
-      propertyPath: horiRate
-      value: 0.025
+      propertyPath: horiSensitivity
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 876402977763883303, guid: c40fecc86b0a2f242be8fde29d1ccc68,
         type: 3}
-      propertyPath: vertRate
-      value: 0.025
+      propertyPath: vertSensitivity
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 876402977763883345, guid: c40fecc86b0a2f242be8fde29d1ccc68,
         type: 3}
@@ -49615,9 +49615,9 @@ PrefabInstance:
       objectReference: {fileID: 856058366}
     - target: {fileID: 876402977763883357, guid: c40fecc86b0a2f242be8fde29d1ccc68,
         type: 3}
-      propertyPath: deathFadeAnim
+      propertyPath: endFadeAnim
       value: 
-      objectReference: {fileID: 767437186}
+      objectReference: {fileID: 1782794638}
     - target: {fileID: 876402977763883357, guid: c40fecc86b0a2f242be8fde29d1ccc68,
         type: 3}
       propertyPath: creditsMenu
@@ -49633,36 +49633,11 @@ PrefabInstance:
       propertyPath: zone2
       value: 
       objectReference: {fileID: 23707856}
-    - target: {fileID: 876402977763883357, guid: c40fecc86b0a2f242be8fde29d1ccc68,
-        type: 3}
-      propertyPath: endFadeAnim
-      value: 
-      objectReference: {fileID: 1782794638}
     - target: {fileID: 1741253199580449925, guid: c40fecc86b0a2f242be8fde29d1ccc68,
         type: 3}
       propertyPath: anim
       value: 
       objectReference: {fileID: 767437186}
-    - target: {fileID: 1741253199580449925, guid: c40fecc86b0a2f242be8fde29d1ccc68,
-        type: 3}
-      propertyPath: audioManager
-      value: 
-      objectReference: {fileID: 1176348913}
-    - target: {fileID: 1741253199580449925, guid: c40fecc86b0a2f242be8fde29d1ccc68,
-        type: 3}
-      propertyPath: creditsMenu
-      value: 
-      objectReference: {fileID: 1585737485}
-    - target: {fileID: 2575034821857160977, guid: c40fecc86b0a2f242be8fde29d1ccc68,
-        type: 3}
-      propertyPath: near clip plane
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2575034821857160977, guid: c40fecc86b0a2f242be8fde29d1ccc68,
-        type: 3}
-      propertyPath: far clip plane
-      value: 1e+17
-      objectReference: {fileID: 0}
     - target: {fileID: 2766690669113946427, guid: c40fecc86b0a2f242be8fde29d1ccc68,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -49671,16 +49646,6 @@ PrefabInstance:
     - target: {fileID: 2766690669113946427, guid: c40fecc86b0a2f242be8fde29d1ccc68,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8702095720456354479, guid: c40fecc86b0a2f242be8fde29d1ccc68,
-        type: 3}
-      propertyPath: m_ShowToolkit
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8702095720456354479, guid: c40fecc86b0a2f242be8fde29d1ccc68,
-        type: 3}
-      propertyPath: m_ShowCustomSorter
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
