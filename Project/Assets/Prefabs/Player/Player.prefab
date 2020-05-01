@@ -14727,7 +14727,7 @@ MonoBehaviour:
   slowFallMultiplier: 35
   fogcard: {fileID: 0}
   distanceBetweenFog: 0
-  useTestUI: 0
+  useTestUI: 1
   zone1: {fileID: 0}
   zone2: {fileID: 0}
 --- !u!114 &876402976663485067
@@ -14784,10 +14784,10 @@ MonoBehaviour:
   dropStep: 0.05
   baseVelocity: {x: 0, y: 0, z: 0}
   addedVelocity: {x: 0, y: 0, z: 0}
-  standardMaxVelocity: 100
-  divingMaxVelocity: 175
+  standardMaxVelocity: 150
+  divingMaxVelocity: 250
   risingMaxVelocity: 25
-  terminalVelocity: 300
+  terminalVelocity: 350
   maxRisingVelocity: 0
   standardForce: 0.8
   divingForce: 1.25
