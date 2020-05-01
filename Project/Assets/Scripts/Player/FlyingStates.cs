@@ -224,6 +224,7 @@ public class FlyingStates : MonoBehaviour
     private float riseMultplyerPlusThreshold;
 
     private GliderController gliderController;
+    private Animator fallingAnim;
 
     public GameObject testUIGO;
 
@@ -231,6 +232,7 @@ public class FlyingStates : MonoBehaviour
     private void Start()
     {
         gliderController = GetComponent<GliderController>();
+        fallingAnim = GetComponentInChildren<Animator>();
         isStablized = true;
         burstEm = false;
         fadeInEm = false;
@@ -402,6 +404,7 @@ public class FlyingStates : MonoBehaviour
                 if (stablizeCounter >= stablizeTarget)
                 {
                     //Play animation here
+                    fallingAnim.SetTrigger("Stalling");
                     isStablized = false;
                     canTurnUp = false;
                 }

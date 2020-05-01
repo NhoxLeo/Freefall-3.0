@@ -66,7 +66,6 @@ public class MenuController : MonoBehaviour
         {
             FindObjectOfType<InputManager>().playerControlsInverted = false;
         }
-
     }
 
     public void Resume()
@@ -111,7 +110,7 @@ public class MenuController : MonoBehaviour
     }
     public void QuitToMenu()
     {
-        Cursor.visible = true;
+        
         animator.SetTrigger("Fade_Out");
         inMainMenu = true;
         Invoke("LoadMainMenu", 1);
@@ -120,6 +119,7 @@ public class MenuController : MonoBehaviour
 
     public void LoadMainMenu()
     {
+        Cursor.visible = true;
         SceneManager.LoadScene("Main_Menu_2");
         mainMenuUI.SetActive(true);
     }

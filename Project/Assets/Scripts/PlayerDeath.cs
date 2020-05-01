@@ -18,11 +18,12 @@ public class PlayerDeath : MonoBehaviour
     {
         anim.SetTrigger("Death_Fade");
         Invoke("ReloadCheckpoint", 2f);
-        FindObjectOfType<AudioManager>().PlayAudio("Dead");
+        
     }
 
     void ReloadCheckpoint()
     {
+        FindObjectOfType<AudioManager>().PlayAudio("Dead");
         gliderController.creditsMenu.SetActive(true);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }

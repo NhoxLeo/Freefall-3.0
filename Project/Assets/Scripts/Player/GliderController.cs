@@ -220,7 +220,7 @@ public class GliderController : MonoBehaviour
         if (other.tag == ("Finish"))
         {
             Debug.Log("Finish");
-            FindObjectOfType<GameMaster>().lastCheckpointPos = new Vector3(480.8f, 958, -11316.4f);
+            FindObjectOfType<GameMaster>().lastCheckpointPos = new Vector3(264.64f, 1348.4f, -17271.99f);
             //EndGameUI.SetActive(true);
             endFadeAnim.SetTrigger("EndGame");
             Cursor.visible = true;
@@ -268,9 +268,9 @@ public class GliderController : MonoBehaviour
     {
         yield return new WaitForSeconds(1.5f);
         //EndGameUI.SetActive(false);
+        endFadeAnim.SetTrigger("CreditsFade");
         creditsMenu.SetActive(true);
         SceneManager.LoadScene("Credits_Scene");
-        
     }
 
     
