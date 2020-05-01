@@ -14784,10 +14784,10 @@ MonoBehaviour:
   dropStep: 0.05
   baseVelocity: {x: 0, y: 0, z: 0}
   addedVelocity: {x: 0, y: 0, z: 0}
-  standardMaxVelocity: 150
-  divingMaxVelocity: 250
+  standardMaxVelocity: 130
+  divingMaxVelocity: 230
   risingMaxVelocity: 25
-  terminalVelocity: 350
+  terminalVelocity: 330
   maxRisingVelocity: 0
   standardForce: 0.8
   divingForce: 1.25
