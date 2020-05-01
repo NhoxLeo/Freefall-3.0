@@ -28,9 +28,9 @@ public class AnimationScript : MonoBehaviour
     void Update()
     {
         //var x = Input.GetAxis("Horizontal");
-        var x = input.yaw;
+        var x = input.horiCounter;
         //var y = Input.GetAxis("Vertical");
-        var y = input.pitch;
+        var y = input.vertCounter;
         //Calling blend tree function
 
         y = Mathf.Clamp(y, -1, 1);

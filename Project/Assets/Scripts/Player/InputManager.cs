@@ -98,10 +98,12 @@ public class InputManager : MonoBehaviour
 
         if (hori >= 0.5f)
         {
+            horiCounter = Mathf.Clamp(horiCounter, -1, 1);
             horiCounter += horiRate;
         }
         else if (hori <= -0.5f)
         {
+            horiCounter = Mathf.Clamp(horiCounter, -1, 1);
             horiCounter -= horiRate;
         }
         else if (hori <= 0.5f || hori >= -0.5f)
@@ -121,10 +123,12 @@ public class InputManager : MonoBehaviour
 
         if (vert >= 0.5f)
         {
+            vertCounter = Mathf.Clamp(vertCounter, -1, 1);
             vertCounter += vertRate;
         }
         else if (vert <= -0.5f)
         {
+            vertCounter = Mathf.Clamp(vertCounter, -1, 1);
             vertCounter -= vertRate;
         }
         else if (vert <= 0.5f || vert >= -0.5f)
