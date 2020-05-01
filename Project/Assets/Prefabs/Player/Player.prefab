@@ -14953,9 +14953,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cda5f910d07d048f4ae71b2f8b0c5881, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  capemovement: {fileID: 2100000, guid: b946a1bb5178e4051ab810e93cdbb9d8, type: 2}
+  capemovement: {fileID: 2100000, guid: 57757162efb3f41258f2d0d8c63803ed, type: 2}
   Windspeed: 0
-  windSpeedDivide: 250
+  windSpeedDivide: 75
 --- !u!114 &1741253199580449925
 MonoBehaviour:
   m_ObjectHideFlags: 0

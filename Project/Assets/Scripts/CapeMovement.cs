@@ -21,8 +21,8 @@ public class CapeMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        Windspeed = flyingStates.Speed;
-        capemovement.SetFloat("Vector1_6AEB6D23", (Windspeed / windSpeedDivide ));
+        Windspeed = flyingStates.Speed / windSpeedDivide;
+        capemovement.SetFloat("Vector1_769F0E1", (Windspeed ));
     }
 }
 
