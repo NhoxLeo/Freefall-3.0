@@ -53,7 +53,7 @@ public class InputManager : MonoBehaviour
     [SerializeField]
     private float yRotationSpeed;
 
-    public bool playerControlsInverted = false;
+    public bool playerControlsInverted;
 
     public float horiCounter;
     [SerializeField]
@@ -75,6 +75,7 @@ public class InputManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        FindObjectOfType<MenuController>();
         canRollLeft = true;
         canRollRight = true;
         animationScript = GetComponent<AnimationScript>();
@@ -82,6 +83,14 @@ public class InputManager : MonoBehaviour
         flyingStates = GetComponent<FlyingStates>();
         gliderController = GetComponent<GliderController>();
         audioManager = GetComponent<AudioManager>();
+        
+        if(FindObjectOfType<MenuController>().controlsInverted == true)
+        {
+            playerControlsInverted = true;
+        }
+       
+
+       
     }
 
 
@@ -168,7 +177,7 @@ public class InputManager : MonoBehaviour
                 pitch = Mathf.Clamp(pitch, 0, 1);
             }
         }
-        else
+        if (playerControlsInverted == true)
         {
             yaw = yRotationSpeed * hori * rotationController.currentYawRotationSpeed * Time.deltaTime;
 

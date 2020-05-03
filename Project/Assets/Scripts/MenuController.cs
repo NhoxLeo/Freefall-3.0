@@ -21,6 +21,7 @@ public class MenuController : MonoBehaviour
     public GameObject backButton3;
     public GameObject backButton4;
     public GameObject MenuCanvas;
+    public GameObject invertToggle;
 
 
 
@@ -28,6 +29,7 @@ public class MenuController : MonoBehaviour
 
     private void Start()
     {
+        FindObjectOfType<InputManager>();
         Time.timeScale = 1f;
     }
 
@@ -56,15 +58,6 @@ public class MenuController : MonoBehaviour
                     Pause();
                 }
             }
-        }
-
-        if (controlsInverted == true)
-        {
-            FindObjectOfType<InputManager>().playerControlsInverted = true;
-        }
-        else if (controlsInverted == false)
-        {
-            FindObjectOfType<InputManager>().playerControlsInverted = false;
         }
     }
 
@@ -123,4 +116,20 @@ public class MenuController : MonoBehaviour
         SceneManager.LoadScene("Main_Menu_2");
         mainMenuUI.SetActive(true);
     }
+
+    public void InvertControls()
+    {
+        if (controlsInverted == false)
+        {
+            FindObjectOfType<InputManager>().playerControlsInverted = true;
+            controlsInverted = true;
+        }
+
+        else if (controlsInverted == true)
+        {
+            FindObjectOfType<InputManager>().playerControlsInverted = false;
+            controlsInverted = false;
+        }
+    }   
+
 }
