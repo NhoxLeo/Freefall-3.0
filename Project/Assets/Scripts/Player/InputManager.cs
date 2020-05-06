@@ -63,7 +63,6 @@ public class InputManager : MonoBehaviour
     [SerializeField]
     private float vertRate;
 
-
     public float hori;
     public float vert;
 
@@ -75,6 +74,7 @@ public class InputManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         FindObjectOfType<MenuController>();
         canRollLeft = true;
         canRollRight = true;
@@ -88,14 +88,17 @@ public class InputManager : MonoBehaviour
         {
             playerControlsInverted = true;
         }
-       
+        else if (FindObjectOfType<MenuController>().controlsInverted == false)
+        {
+            playerControlsInverted = false;
+        }
 
        
     }
 
-
     void Update()
     {
+
         boostVariable = boostUpdater;
         LeftRollCounter();
         RightRollCounter();
@@ -155,12 +158,7 @@ public class InputManager : MonoBehaviour
                 vertCounter += vertRate * 8;
                 vertCounter = Mathf.Clamp(vertCounter, -1, 0);
             }
-
-
         }
-
-
-
     }
 
     public void InputData()

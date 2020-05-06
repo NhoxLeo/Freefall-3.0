@@ -25,6 +25,6 @@ public class FogCardScript : MonoBehaviour
 
 
         fogDensity = Mathf.Clamp(fogDensity, -10, 30);
-        materialFogDensity.SetFloat("Vector1_C9555341", fogDensity + 10);
+        materialFogDensity.SetFloat("Vector1_C9555341", fogDensity + 11);
     }
 }

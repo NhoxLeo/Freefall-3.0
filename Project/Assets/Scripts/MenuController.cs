@@ -42,8 +42,11 @@ public class MenuController : MonoBehaviour
         Invoke("LoadGame", 1);
     }
 
+
     void Update()
     {
+        KeepInvert();
+
         if (inMainMenu == false)
         {
             if (Input.GetButtonDown("PauseGame"))
@@ -83,10 +86,12 @@ public class MenuController : MonoBehaviour
         Debug.Log("Paused");
         Time.timeScale = 0f;
         mainMenuUI.SetActive(false);
-        pauseMenuUI.SetActive(true);
 
+        pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
+
         GameIsPaused = true;
+
     }
 
     public void QuitGame()
@@ -124,12 +129,25 @@ public class MenuController : MonoBehaviour
             FindObjectOfType<InputManager>().playerControlsInverted = true;
             controlsInverted = true;
         }
-
         else if (controlsInverted == true)
         {
             FindObjectOfType<InputManager>().playerControlsInverted = false;
             controlsInverted = false;
         }
     }   
+
+    public void KeepInvert()
+    {
+        if(controlsInverted == false)
+        {
+            FindObjectOfType<InputManager>().playerControlsInverted = false;
+            controlsInverted = false;
+        }
+        else if(controlsInverted == true)
+        {
+            FindObjectOfType<InputManager>().playerControlsInverted = true;
+            controlsInverted = true;
+        }
+    }
 
 }

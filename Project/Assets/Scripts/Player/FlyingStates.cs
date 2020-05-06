@@ -274,9 +274,6 @@ public class FlyingStates : MonoBehaviour
 
         drop = Mathf.Clamp(drop, minDrop, maxDrop);
 
-
-
-
         WindResistanceVariable();
         WindResistance();
         windResistanceAngle = -rot.x;
@@ -296,7 +293,6 @@ public class FlyingStates : MonoBehaviour
 
         diveMultplyerPlusThreshold = diveThreshold + unstableDiveMultpler;
         riseMultplyerPlusThreshold = riseThreshold + -unstableDiveMultpler;
-
 
     }
 
@@ -365,13 +361,9 @@ public class FlyingStates : MonoBehaviour
 
                         if (burstEm == false)
                         {
-                            return;
-                        }
-                        else if (burstEm == true)
-                        {
                             rightHexPS.Play();
                             leftHexPS.Play();
-                            StartCoroutine("HexWait");
+                            StartCoroutine("HexOutWait");
                         }
                         isInTerminalVelocity = true;
                     }
@@ -481,13 +473,19 @@ public class FlyingStates : MonoBehaviour
                 {
                     FindObjectOfType<AudioManager>().PlayAudio("WingsOut");
                     WingsOut();
+
+                    if (burstEm == true)
+                    {
+                        rightHexOutPS.Play();
+                        leftHexOutPS.Play();
+                        StartCoroutine("HexInWait");
+                    }
                 }
 
                 //baseVelocity += transform.forward * terminalBoostSpeed;
                 canTerminalBoost = false;
             }
         }
-
     }
     //Reset--------------------------------------------Reset--------------------------------------------Reset--------------------------------------------
 
@@ -514,7 +512,6 @@ public class FlyingStates : MonoBehaviour
         currentTargetForce = standardForce;
     }
 
-
     public void UseBoosFuel()
     {
         if (isBoosting == false)
@@ -527,10 +524,18 @@ public class FlyingStates : MonoBehaviour
         }
     }
 
-    public IEnumerator HexWait()
+    public IEnumerator HexInWait()
     {
         yield return new WaitForSeconds(hexSpeed);
         burstEm = false;
+        rightHexOutPS.Stop();
+        leftHexOutPS.Stop();
+    }
+
+    public IEnumerator HexOutWait()
+    {
+        yield return new WaitForSeconds(hexSpeed);
+        burstEm = true;
         rightHexPS.Stop();
         leftHexPS.Stop();
     }
@@ -541,15 +546,18 @@ public class FlyingStates : MonoBehaviour
         divingParticle.Play();
         Debug.Log("diving particle On");
 
-
         WingStreamsOff();
-        fadeInState = fadeInOn;
-        burstState = burstOn;
         WingsFadeIn = true;
+
+        fadeInState = fadeInOn;
+
+        //burstEm = false;
+        burstState = burstOn;
+
+
         FindObjectOfType<AudioManager>().PlayAudio("WingsIn");
 
         wingsOut = false;
-
     }
 
     public void WingsOut()
@@ -561,17 +569,16 @@ public class FlyingStates : MonoBehaviour
         WingStreamsOn();
         WingsFadeIn = false;
 
-        burstEm = true;
+        fadeInState = fadeInOff;
+
+        //burstEm = true;
+        burstState = burstOff;
 
         wingsOut = true;
+    }
 
 
-    }
-    void WingsFader()
-    {
-        rightWing.SetFloat("Vector1_40B4CAEF", wingsValue);
-        leftWing.SetFloat("Vector1_8E308617", wingsValue);
-    }
+
 
     public void WingStreamsOff()
     {
@@ -579,14 +586,17 @@ public class FlyingStates : MonoBehaviour
 
     }
 
-
     public void WingStreamsOn()
     {
         streamState = streamOn;
 
     }
 
-
+    void WingsFader()
+    {
+        rightWing.SetFloat("Vector1_40B4CAEF", wingsValue);
+        leftWing.SetFloat("Vector1_8E308617", wingsValue);
+    }
 
 
 
