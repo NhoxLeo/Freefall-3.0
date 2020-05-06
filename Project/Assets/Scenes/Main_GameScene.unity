@@ -1632,18 +1632,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1937500714}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &50490287 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 876402976663485067, guid: c40fecc86b0a2f242be8fde29d1ccc68,
-    type: 3}
-  m_PrefabInstance: {fileID: 1937500714}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 50490279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7adbc8b199bf4454eaca1e41a5eee059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &55256952
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2032,45 +2020,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: -2432090755550338912, guid: 9443a0d11dee9a14996fb1cb69e0621a, type: 3}
---- !u!1 &60012830 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6526237202298944538, guid: c40fecc86b0a2f242be8fde29d1ccc68,
-    type: 3}
-  m_PrefabInstance: {fileID: 1937500714}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &60012832 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 624450476094657541, guid: c40fecc86b0a2f242be8fde29d1ccc68,
-    type: 3}
-  m_PrefabInstance: {fileID: 1937500714}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 60012830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &60012833
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 60012830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c530bc208a87214fac88c29b39a9718, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  flyingStates: {fileID: 50490287}
-  fuel: {fileID: 60012832}
-  UITankImage: {fileID: 1247572542}
-  FlashRate: 2
-  CurrentLerp: 0
-  BaseColor: {r: 0.56078434, g: 0.04705883, b: 0.9607844, a: 1}
-  FlashColor: {r: 1, g: 1, b: 1, a: 0}
-  Flashing: 1
-  LerpGoingUp: 1
 --- !u!4 &61175832 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4223850170757940726, guid: e9bcfad41e7d4a5499b31a6bcd307c25,
@@ -53649,21 +53598,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 624450476094657541, guid: c40fecc86b0a2f242be8fde29d1ccc68,
-        type: 3}
-      propertyPath: m_Value
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 624450476094657541, guid: c40fecc86b0a2f242be8fde29d1ccc68,
-        type: 3}
-      propertyPath: m_MaxValue
-      value: 75
-      objectReference: {fileID: 0}
-    - target: {fileID: 624450476094657541, guid: c40fecc86b0a2f242be8fde29d1ccc68,
-        type: 3}
-      propertyPath: m_WholeNumbers
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 60012833, guid: c40fecc86b0a2f242be8fde29d1ccc68, type: 3}
+      propertyPath: UITankImage
+      value: 
+      objectReference: {fileID: 1247572542}
     - target: {fileID: 876402976663485067, guid: c40fecc86b0a2f242be8fde29d1ccc68,
         type: 3}
       propertyPath: speedUI
@@ -53769,21 +53707,11 @@ PrefabInstance:
       propertyPath: zone2
       value: 
       objectReference: {fileID: 23707856}
-    - target: {fileID: 876402977763883357, guid: c40fecc86b0a2f242be8fde29d1ccc68,
-        type: 3}
-      propertyPath: useTestUI
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1741253199580449925, guid: c40fecc86b0a2f242be8fde29d1ccc68,
         type: 3}
       propertyPath: anim
       value: 
       objectReference: {fileID: 767437186}
-    - target: {fileID: 1926675948958037706, guid: c40fecc86b0a2f242be8fde29d1ccc68,
-        type: 3}
-      propertyPath: m_RaycastTarget
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2766690669113946427, guid: c40fecc86b0a2f242be8fde29d1ccc68,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -53792,51 +53720,6 @@ PrefabInstance:
     - target: {fileID: 2766690669113946427, guid: c40fecc86b0a2f242be8fde29d1ccc68,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3842954253437939539, guid: c40fecc86b0a2f242be8fde29d1ccc68,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3842954253437939539, guid: c40fecc86b0a2f242be8fde29d1ccc68,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 450
-      objectReference: {fileID: 0}
-    - target: {fileID: 3842954253437939539, guid: c40fecc86b0a2f242be8fde29d1ccc68,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 6.66
-      objectReference: {fileID: 0}
-    - target: {fileID: 6526237202298944538, guid: c40fecc86b0a2f242be8fde29d1ccc68,
-        type: 3}
-      propertyPath: m_Name
-      value: Fuel
-      objectReference: {fileID: 0}
-    - target: {fileID: 7746348534659571534, guid: c40fecc86b0a2f242be8fde29d1ccc68,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 0.19607843
-      objectReference: {fileID: 0}
-    - target: {fileID: 7746348534659571534, guid: c40fecc86b0a2f242be8fde29d1ccc68,
-        type: 3}
-      propertyPath: m_RaycastTarget
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7769718063756309563, guid: c40fecc86b0a2f242be8fde29d1ccc68,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 0.5882353
-      objectReference: {fileID: 0}
-    - target: {fileID: 7769718063756309563, guid: c40fecc86b0a2f242be8fde29d1ccc68,
-        type: 3}
-      propertyPath: m_RaycastTarget
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8185449218708741638, guid: c40fecc86b0a2f242be8fde29d1ccc68,
-        type: 3}
-      propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8185449218708741638, guid: c40fecc86b0a2f242be8fde29d1ccc68,
